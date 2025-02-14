@@ -33,7 +33,7 @@ def train_2d_model(dataset_name='Cora', model_type='gcn', hidden_dim=2, num_epoc
     # Load dataset
     dataset = Planetoid(root='/tmp/' + dataset_name, name=dataset_name)
     data = dataset[0]
-    # data = np.load('/Users/adarshjamadandi/Desktop/Submissions/MemorizationGNNs/Memv2_Nov10/data/texas.npz')
+    # data = np.load('data/texas.npz')
     # print("Converting to PyG dataset...")
     # x = torch.tensor(data['node_features'], dtype=torch.float)
     # y = torch.tensor(data['node_labels'], dtype=torch.long)
